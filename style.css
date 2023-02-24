@@ -1,14 +1,85 @@
-#welcome {
+body {
+    background-color: antiquewhite;
+  
+}
+
+#container {
+    display: flex;
+    /* align-items: stretch; */
+}
+
+#sideBar {
+    padding: 1em 1em 1em 1em;
+    background-color: grey;
+}
+
+#sideButton {
+    width: 5em;
+}
+
+#buttons {
+    display: none;
+    margin: 2em 4em 0 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+#bioButton {
+    margin: 1em 0 1em 0;
+}
+
+#resumeButton {
+    margin: 1em 0 1em 0;
+}
+
+#projectsButton {
+    margin: 1em 0 1em 0;
+}
+
+#welcomeContainer {
+    flex-grow: 3;
     text-align: center;
-    margin-top: 10em;
+}
+
+#welcome {
+    background-color: lightcoral;
+    padding: 2em 0 2em 0;
+    margin: 0 0 0 1em;
 }
 
 #directions {
-    text-align: center;
-    margin-top: 10em;
+
 }
 
-.bioHead {
+
+
+
+#bio {
+    display: none;
+}
+
+#bioDescriptions {
+    text-align: center;
+}
+
+
+
+
+
+#resume {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
+
+
+
+/* .bioHead {
     text-align: center;
 }
 
@@ -17,17 +88,9 @@
 
 }
 
-#bio {
-    display: none;
-}
-
-#resume {
-    display: none;
-}
-
 button {
     width: 2em; 
   height: 1em; 
   margin: 0 1em 0 1em;
   
-}
+} */

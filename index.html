@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,42 +11,75 @@
 		<script src="app.js"></script>
 	</head>
 <body>
-    <h1 id="welcome">Welcome to Alex's Project</h1>
-    <p id="directions">Click on the drop-down menu on the left to find out more about me</p>
- <div id="bio"> 
-        <li class="bioHead">My Life</li>
-        <p>I was born and raised in Milan, Italy, but moved to the US in 2016. I lived in beautiful San Francisco for two years and then moved to the opposite side of the country in Charleston, South Carolina, where I got an undergraduate degree in Economics. Now I am on my way to becoming a software engineer! <p>
 
-        <li class="bioHead">My Interests</li>
-        <p>I am a big outdoors guy, unless it's August and I'm in Charleston, then my biggest interest becomes AC! My favorite sport is tennis, but I love to play anything as long as it involves being competitive (that includes board games, although I do get alittle carried away when I'm playing Catan..). I also really like watching European soccer, and I'm a big TV show nerd <p>
+<div id="container">
+    <div id="sideBar">
+        <button id="sideButton">MENU</button>
+        <div id="buttons">
+            <ul>
+                <li><button id="bioButton">Alex's Biography</button></li>
+                <li><button id="resumeButton">Alex's Resume</button></li>
+                <li><button id="projectsButton">Projects completed by Alex</button></li>
+            </ul>
+        </div>
+    </div>
+    
 
-        <li class="bioHead">Photo Gallery</li>
-        <p id="galleryHeader">Here are some picture of me and my friends and family:</p>
+    <div id="welcomeContainer">
+        <h1 id="welcome">Welcome to Alex's Project One</h1>
+        <h3 id="directions">Wanna get to know me? Just hover over to the box on the left and you can choose what to find out about me</h3>
+    </div>
+</div>
+    
+    
+
+    
+    
+
+    <div id="bio"> 
+        <div id="bioDescriptions">
+            <li class="bioHead">My Life</li>
+            <p>I was born and raised in Milan, Italy, but moved to the US in 2016. I lived in beautiful San Francisco for two years and then moved to the opposite side of the country in Charleston, South Carolina, where I got an undergraduate degree in Economics. Now I am on my way to becoming a software engineer! <p>
+            <li class="bioHead">My Interests</li>
+            <p>I am a big outdoors guy, unless it's August and I'm in Charleston, then my biggest interest becomes AC! My favorite sport is tennis, but I love to play anything as long as it involves being competitive (that includes board games, although I do get alittle carried away when I'm playing Catan..). I also really like watching European soccer, and I'm a big TV show nerd <p>
+            <li class="bioHead">Photo Gallery</li>
+            <p id="galleryHeader">Here are some picture of me and my friends and family:</p>
+        </div>
 
         <div id="carousel-container">
+
             <div id="previous">
+                <button></button>
             </div>
+
             <div class="carousel-images">
                 <img src="https://i.ibb.co/Lxg1Yth/Screen-Shot-2023-02-22-at-2-15-19-PM.png" alt="photo of me"/>
                 <img src="https://i.ibb.co/nD032zk/Screen-Shot-2023-02-22-at-2-16-56-PM.png" alt="photo of friends"/>
                 <img src="https://i.ibb.co/ggbTBjp/Screen-Shot-2023-02-22-at-2-23-58-PM.png" alt="photo of family"/>
             </div>
+
             <div id="next">
             </div>
+
         </div>
-        
-        
- </div>
- <div id="resume">
-    <img src="https://i.ibb.co/wrR1wXZ/Screen-Shot-2023-02-22-at-2-34-18-PM.png" alt="resume"/>
- </div>
- <div id="projects">
-    <h3 class="projectList">Project 1<button></button></h3> 
+
+    </div>
+
+    <div id="resume">
+
+        <img src="https://i.ibb.co/wrR1wXZ/Screen-Shot-2023-02-22-at-2-34-18-PM.png" alt="resume"/>
+
+    </div>
+
+    <div id="projects">
+
+        <h3 class="projectList">Project 1<button></button></h3> 
         <p>rock paper scissors</p>
-    <h3 class="projectList">Project 2<button></button></h3>
+        <h3 class="projectList">Project 2<button></button></h3>
         <p>Landscaper</p>
-    <h3 class="projectList">Project 3<button></button></h3>
+        <h3 class="projectList">Project 3<button></button></h3>
         <p>Space Battle</p>
- </div>
+
+    </div>
 </body>
 </html>
