@@ -1,46 +1,21 @@
 body {
     background-color: antiquewhite;
-  
 }
 
-#container {
+#home-page {
     display: flex;
-    /* align-items: stretch; */
+    justify-content:space-around;
+    min-height: 100vh;
 }
 
-#sideBar {
-    padding: 1em 1em 1em 1em;
-    background-color: grey;
-}
 
-#sideButton {
-    width: 5em;
-}
-
-#buttons {
-    display: none;
-    margin: 2em 4em 0 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-#bioButton {
-    margin: 1em 0 1em 0;
-}
-
-#resumeButton {
-    margin: 1em 0 1em 0;
-}
-
-#projectsButton {
-    margin: 1em 0 1em 0;
-}
 
 #welcomeContainer {
-    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
+    width: 100%;
 }
 
 #welcome {
@@ -56,12 +31,73 @@ li {
 
 
 
+
+.sideBar {
+    padding: 1em 1em 1em 1em;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVuRImq2WGp0mxLMwJJaSyyLLAiSoBa18Ew&usqp=CAU');
+    padding: 2em 2em 2em 2em ;
+}
+
+.buttons {
+    display: none;
+    margin: 2em 4em 0 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.bioButton {
+    margin: 1em 0 1em 0;
+}
+
+.resumeButton {
+    margin: 1em 0 1em 0;
+}
+
+.projectsButton {
+    margin: 1em 0 1em 0;
+}
+
+
+
+
+
+
 #bio {
     display: none;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+#bioContents {
+    display: flex;
+    flex-direction: column;
 }
 
 #bioDescriptions {
     text-align: center;
+}
+
+#carousel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+   
+}
+
+#previous {
+    display: flex;
+}
+
+.carousel-images img {
+	width: 39em;
+    height: 43em;
+	display: none;
+}
+
+#next {
+    display: flex;
 }
 
 
@@ -70,13 +106,46 @@ li {
 
 #resume {
     display: none;
+   
+}
+#resumeImage {
+    width: 100%;
+    text-align: center;
 }
 
+
+
+
+
 #projects {
+    display: none;
+    min-height: 100vh;
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-text {
     display: none;
 }
 
 
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkseagreen;
+}
+
+
+.project-hide {
+    display: none;
+}
 
 
 /* .bioHead {
@@ -94,3 +163,18 @@ button {
   margin: 0 1em 0 1em;
   
 } */
+
+/* img {
+    width: 39em;
+    height: 43em;
+} */
+
+
+
+
+
+
+
+
+
+

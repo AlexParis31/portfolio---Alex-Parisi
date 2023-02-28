@@ -12,31 +12,45 @@
 	</head>
 <body>
 
-<div id="container">
-    <div id="sideBar">
-        <button id="sideButton">MENU</button>
-        <div id="buttons">
+<div id="home-page">
+
+    <div class="sideBar">
+
+        <div class="buttons">
             <ul>
-                <li><button id="bioButton">Alex's Biography</button></li>
-                <li><button id="resumeButton">Alex's Resume</button></li>
-                <li><button id="projectsButton">Projects completed by Alex</button></li>
+                <li><button class="bioButton">Alex's Biography</button></li>
+                <li><button class="resumeButton">Alex's Resume</button></li>
+                <li><button class="projectsButton">Projects completed by Alex</button></li>
             </ul>
         </div>
+
     </div>
-    
 
     <div id="welcomeContainer">
         <h1 id="welcome">Welcome to Alex's Project One</h1>
         <h3 id="directions">Wanna get to know me? Just hover over to the box on the left and you can choose what to find out about me</h3>
     </div>
+
 </div>
-    
-    
 
-    
-    
 
-    <div id="bio"> 
+
+<div id="bio"> 
+
+    <div class="sideBar">
+
+        <div class="buttons">
+            <ul>
+                <li><button class="homeButton">Home Page</button></li>
+                <li><button class="resumeButton">Alex's Resume</button></li>
+                <li><button class="projectsButton">Projects completed by Alex</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="bioContents">
+
         <div id="bioDescriptions">
             <li class="bioHead">My Life</li>
             <p>I was born and raised in Milan, Italy, but moved to the US in 2016. I lived in beautiful San Francisco for two years and then moved to the opposite side of the country in Charleston, South Carolina, where I got an undergraduate degree in Economics. Now I am on my way to becoming a software engineer! <p>
@@ -49,37 +63,78 @@
         <div id="carousel-container">
 
             <div id="previous">
-                <button></button>
+                <button id="previousButton">Previous</button>
             </div>
 
             <div class="carousel-images">
-                <img src="https://i.ibb.co/Lxg1Yth/Screen-Shot-2023-02-22-at-2-15-19-PM.png" alt="photo of me"/>
+                <img src="https://i.ibb.co/8YcMst1/Screen-Shot-2023-02-24-at-12-36-21-PM.png" alt="photo of me"/>
                 <img src="https://i.ibb.co/nD032zk/Screen-Shot-2023-02-22-at-2-16-56-PM.png" alt="photo of friends"/>
-                <img src="https://i.ibb.co/ggbTBjp/Screen-Shot-2023-02-22-at-2-23-58-PM.png" alt="photo of family"/>
+                <img src="https://i.ibb.co/M5tfLvJ/Screen-Shot-2023-02-24-at-12-35-14-PM.png" alt="photo of family"/>
             </div>
 
             <div id="next">
+                <button id="nextButton">Next</button>
             </div>
 
         </div>
 
     </div>
 
-    <div id="resume">
+</div>
 
+
+<div id="resume">
+
+    <div class="sideBar">
+
+        <div class="buttons">
+            <ul>
+                <li><button class="homeButton">Home Page</button></li>
+                <li><button class="bioButton">Alex's Biography</button></li>
+                <li><button class="projectsButton">Projects completed by Alex</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="resumeImage">
         <img src="https://i.ibb.co/wrR1wXZ/Screen-Shot-2023-02-22-at-2-34-18-PM.png" alt="resume"/>
+    </div>
+    
+</div>
+
+
+<div id="projects">
+
+    <div class="sideBar">
+
+        <div class="buttons">
+        <ul>
+            <li><button class="homeButton">Home Page</button></li>
+            <li><button class="bioButton">Alex's Biography</button></li>
+            <li><button class="resumeButton">Alex's Resume</button></li>
+        </ul>
+        </div>  
 
     </div>
 
-    <div id="projects">
+    <div id="projects-container">
+        <h3 class="projectList">Project 1<button class="project-button">Show</button><button class="project-hide">Hide</button></h3> 
+        <p class="project-text">rock paper scissors</p>
 
-        <h3 class="projectList">Project 1<button></button></h3> 
-        <p>rock paper scissors</p>
-        <h3 class="projectList">Project 2<button></button></h3>
-        <p>Landscaper</p>
-        <h3 class="projectList">Project 3<button></button></h3>
-        <p>Space Battle</p>
+        <h3 class="projectList">Project 2<button class="project-button">Show</button><button class="project-hide">Hide</button></h3>
+        <p class="project-text">Landscaper</p>
 
-    </div>
+        <h3 class="projectList">Project 3<button class="project-button">Show</button><button class="project-hide">Hide</button>></h3>
+        <p class="project-text">Space Battle</p>
+    </div>  
+
+</div>
+
+<footer>
+    <a href='https://www.linkedin.com/in/alexparisi-se/'><img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' width=50 height=50></a>
+    <a href='https://github.com/AlexParis31'><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' width=50 height=50></a>
+    <a href='https://www.instagram.com/alexander_parisi/'><img src='https://cdn-icons-png.flaticon.com/512/174/174855.png' width=50 height=50></a>
+</footer>
 </body>
 </html>
