@@ -1,46 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 body {
-    background-color: antiquewhite;
+    background-image: url('https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==');
+    background-size: cover;
 }
 
+header {
+    background-color:rgb(74, 45, 45);
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+    font-size: 40px;
+    margin: -0.3em -0.3em 0.2em -0.3em;
+    opacity: 0.5;
+    
+}
+
+/* Home Page */
 #home-page {
     display: flex;
     justify-content:space-around;
     min-height: 100vh;
 }
 
-
-
-#welcomeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-}
-
-#welcome {
-    background-color: lightcoral;
-    padding: 2em 0 2em 0;
-    margin: 0 0 0 1em;
-}
-
-#directions {
-
-}
-
-
-
-
-
+/* Side Bar */
 .sideBar {
     padding: 1em 1em 1em 1em;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVuRImq2WGp0mxLMwJJaSyyLLAiSoBa18Ew&usqp=CAU');
+    background-color: rgba(88, 73, 61, 0.708);
     padding: 2em 2em 2em 2em ;
+    margin: -0.5em 0 0 -0.5em;
 }
 
 .buttons {
     display: none;
     margin: 2em 4em 0 0;
+    padding-top: 8em;
+}
+
+.options {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    margin-top: 4em;
 }
 
 li {
@@ -48,31 +53,78 @@ li {
 }
 
 .bioButton {
-    margin: 1em 0 1em 0;
+    margin: 2em 0 1em 0;
+    border-radius: 50%;
+    width: 120px;
+    height: 80px;
+    font-size: 16px;
 }
 
 .resumeButton {
-    margin: 1em 0 1em 0;
+    margin: 2em 0 1em 0;
+    border-radius: 50%;
+    width: 120px;
+    height: 80px;
+    font-size: 16px;
 }
 
 .projectsButton {
-    margin: 1em 0 1em 0;
+    margin: 2em 0 1em 0;
+    border-radius: 50%;
+    width: 120px;
+    height: 80px;
+    font-size: 16px;
 }
 
+.homeButton {
+    margin: 1em 0 1em 0;
+    border-radius: 50%;
+    width: 120px;
+    height: 80px;
+    font-size: 16px;
+}
+/* Side Bar */
+
+
+/* Welcome Section */
+#welcomeContainer {
+    /* background-image: url('https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==');
+    background-size: cover; */
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin: 3em -0.5em 0 0;
+}
+
+#welcome {
+    color: rgb(74, 45, 45);
+    font-family: 'Rampart One';
+}
+
+#directions {
+ font-family: 'Shantell Sans';
+ font-size: 30px;
+ color:rgb(19, 19, 28)
+}
+/* Welcome Section */
 
 
 
 
 
+
+/* Biography Page */
 #bio {
     display: none;
     min-height: 100vh;
-    background-color: aqua;
 }
 
 #bioContents {
     display: flex;
     flex-direction: column;
+    /* background-image: url('https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==');
+    background-size: cover; */
+    margin: 1.5em -0.5em 0 0;
 }
 
 #bioDescriptions {
@@ -87,94 +139,89 @@ li {
 }
 
 #previous {
-    display: flex;
+    margin-left: 2em;
+
 }
 
 .carousel-images img {
 	width: 39em;
     height: 43em;
 	display: none;
+    margin-bottom: 6em;
 }
 
 #next {
-    display: flex;
+    margin-right: 1.5em;
 }
+/* Biography Page */
 
 
 
-
-
+/* Resume Page */
 #resume {
     display: none;
+    min-height: 100vh;
+    /* background-image: url('https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==');
+    background-size: cover; */
    
 }
 #resumeImage {
     width: 100%;
     text-align: center;
+    margin: 0 -0.5em 0 0;
 }
+/* Resume Page */
 
 
 
-
-
+/* Project Page */
 #projects {
     display: none;
     min-height: 100vh;
+}
+
+.projectList {
+    padding-top: 3em;
 }
 
 #projects-container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 100%;
+    margin: 2em -0.5em 0 0;
+}
+
+.project-button {
+    margin-left: 1em;
+}
+
+.project-hide {
+    display: none;
+    margin-left: 1em;
 }
 
 .project-text {
     display: none;
 }
+/* Project Page */
 
 
 
+/* Footer */
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: darkseagreen;
+    background-color: rgb(74, 45, 45);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em 0 0.5em 0;
 }
 
-
-.project-hide {
-    display: none;
-}
-
-
-/* .bioHead {
-    text-align: center;
-}
-
-#galleryHeader {
-    text-align: center;
-
-}
 
 button {
-    width: 2em; 
-  height: 1em; 
-  margin: 0 1em 0 1em;
-  
-} */
-
-/* img {
-    width: 39em;
-    height: 43em;
-} */
-
-
-
-
-
-
-
-
-
-
+    cursor: pointer;
+}
