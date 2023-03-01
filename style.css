@@ -3,8 +3,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
+.arrow-right {
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .arrow-left {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin: 10em 0 -10em 0em;
+  }  
+
 body {
-    background-image: url('https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==');
+    background-image: url('https://st2.depositphotos.com/1297059/5667/i/600/depositphotos_56675091-stock-photo-blue-background.jpg');
     background-size: cover;
 }
 
@@ -17,6 +36,7 @@ header {
     font-size: 40px;
     margin: -0.3em -0.3em 0.2em -0.3em;
     opacity: 0.5;
+    min-width: 100vh;
     
 }
 
@@ -30,14 +50,14 @@ header {
 /* Side Bar */
 .sideBar {
     padding: 1em 1em 1em 1em;
-    background-color: rgba(88, 73, 61, 0.708);
+    background-color: rgba(45, 23, 144, 0.341);
     padding: 2em 2em 2em 2em ;
     margin: -0.5em 0 0 -0.5em;
 }
 
 .buttons {
     display: none;
-    margin: 2em 4em 0 0;
+    margin: -5em 4em 0 0;
     padding-top: 8em;
 }
 
@@ -93,11 +113,11 @@ li {
     text-align: center;
     width: 100%;
     font-size: 50px;
-    margin: 3em -0.5em 0 0;
+    margin: 1em -0.5em 0 0;
 }
 
 #welcome {
-    color: rgb(74, 45, 45);
+    color: rgb(31, 5, 146);
     font-family: 'Rampart One';
 }
 
@@ -105,6 +125,11 @@ li {
  font-family: 'Shantell Sans';
  font-size: 30px;
  color:rgb(19, 19, 28)
+}
+
+#meImage {
+   margin-right: 1.4em;
+   border: 5px solid black;
 }
 /* Welcome Section */
 
@@ -116,31 +141,39 @@ li {
 /* Biography Page */
 #bio {
     display: none;
-    min-height: 100vh;
+    flex-direction: row;
 }
 
 #bioContents {
+    align-self: center;
     display: flex;
     flex-direction: column;
-    /* background-image: url('https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==');
-    background-size: cover; */
-    margin: 1.5em -0.5em 0 0;
+    /* margin: 1.5em 10em 0 10em; */
 }
 
 #bioDescriptions {
+    align-self: center;
     text-align: center;
+    max-width: 50%;
 }
 
 #carousel-container {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    /* align-self: center; */
+    /* max-width: 70%; */
    
 }
 
-#previous {
-    margin-left: 2em;
-
+#previous { 
+  height: 40px;
+  margin-left: 20em;
+  margin-right: 40px;
+  line-height: 2.5em;
+  padding-left: 1em;
+  padding-right: 2em;
+  color: black;
 }
 
 .carousel-images img {
@@ -151,7 +184,13 @@ li {
 }
 
 #next {
-    margin-right: 1.5em;
+    height: 40px;
+  margin-left: 40px;
+  margin-right: 20em;
+  line-height: 2.5em;
+  padding-left: 1em;
+  padding-right: 2em;
+  color: black;
 }
 /* Biography Page */
 
@@ -213,7 +252,7 @@ li {
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(74, 45, 45);
+    background-color: rgb(99, 202, 239);
     position: fixed;
     left: 0;
     bottom: 0;

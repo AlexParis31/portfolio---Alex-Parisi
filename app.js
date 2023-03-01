@@ -7,11 +7,11 @@ $(() => {
 
     const appear = () => {
     $('.buttons').show('slow')
-
     }
 
     const disappear = () => {
     $('.buttons').css('display', 'none')
+    
     }
     // ** sidebar hover **
 
@@ -56,7 +56,7 @@ $(() => {
         $('#bio').css('display', 'none')
         $('#resume').css('display', 'none')
         $('#projects').css('display', 'none')
-        $('header').text("Alex's Website")
+        $('header').text("Home Page")
     }
     // ** buttons to other pages **
 
@@ -74,7 +74,7 @@ $(() => {
         imgIndex = imgIndex-1
         $('.carousel-images').children().eq(imgIndex + 1).css('display','none')
         if (imgIndex < 0) {
-            imgIndex = 2
+            imgIndex = 5
             
         }
         $('.carousel-images').children().eq(imgIndex).css('display','block')
@@ -83,7 +83,7 @@ $(() => {
     const nextButton = () => {
         imgIndex ++
         $('.carousel-images').children().eq(imgIndex - 1).css('display','none')
-        if (imgIndex > 2) {
+        if (imgIndex > 5) {
             imgIndex = 0
             
         }
